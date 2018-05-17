@@ -1,0 +1,26 @@
+Diff-ing between files is quite helpful, in that:
+1. Changes introduced in the later version can be understood from a developer's perspective
+2. Bugs seen in the later version can be used to pinpoint to the code changes that may have caused them
+
+Maintaining file revisions increases programmer efficiency in the following ways:
+1. The programmer gets to know at what point which changes were brought in
+2. A quick diff between the first and last files helps to know how much the code has changed overall
+3. A previous version of the file(s) can be quickly restored if the need arises
+
+Manual vs automatic commits:
+In manual commits, since the developer has the responsibility of making the commit call, we can be assured that the commits will be made in a way that makes logical sense. That is, it's unlikely that commits will be too tiny. However, on the downside, it could so happen that the developer forgets to commit after some of the logical changes and ends up with a huge commit call with several logical pieces, making it difficult to understand later.
+In automatic commits, since the system keeps saving changes, there's no chance of changes that are too big being committed at one go. However, due to the very small size of commits, the logical flow of the versions is not necessarily maintained.
+
+Why version control systems like Git allow multiple file changes simultaneously while some like Google drive don't:
+Git is used mainly to track changes in a project that may or may not span multiple files, depending on the logic involved, whereas Google drive is exclusively for managing individual files and folders, and hence the latter need not concern itself with the clubbing together of the changes.
+
+git log and git diff:
+git log is a command that lists all of the commits made to a particular repository (commit ID, commit author, date and time, description, etc.).
+git diff is used for diff-ing between two commits based on their commit IDs (git diff commit_first commit_second).
+The two commands can be used for view commit/file history - git log to get all commits and git diff to see what was changed between multiple files.
+
+Using git could lead to committing error-prone code:
+Since git gives the user the ability to "checkout" to a particular state of the repository at any given commit, they can be a bit nonchalant about making breaking changes, since in such cases the state of the repo could easily be reverted to a working one.
+
+Why use git?
+I'd like to use git to maintain a repo where I could store the code for all the projects I've ever done, and also embrace good development practices for new projects unlike in previous cases (i.e. renaming project files to have _1, _2, _final, etc. appended for versions). Since I'm taking up so many software-related MOOCs, I'd like to use version control while developing projects related to those.
