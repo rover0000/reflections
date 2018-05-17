@@ -3,6 +3,7 @@ You tell git that this repository is where most of your development code will re
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
+It acts like an intermediate stage between the working directory and the repository for changes to go in. You can logically group together certain changes and put them in the staging area for a commit, so that the logical flow of changes is maintained.
 
 How can you use the staging area to make sure you have one commit per logical
 change?
