@@ -3,8 +3,7 @@ When you'd want to collaborate with people remotely, and even to keep a cloud-ba
 
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
-
-    Fill in your answer here
+There might be local changes that you'd have made that you wouldn't want to be lost in case of automatic pull requests. As a developer, you'd know when to pull changes from the remote to the local repo.
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
