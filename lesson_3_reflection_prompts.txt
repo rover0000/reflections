@@ -8,7 +8,9 @@ There might be local changes that you'd have made that you wouldn't want to be l
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-    Fill in your answer here
+Forks: Taken from a different user, a new repository created under your username. Automatically cloned from the forked repo. Works only on GitHub, and not on local branches
+Clones: Exact copies of a repo in local workspace. Used when you want to start from the base version of a repo, and want to make different kinds of changes in multiple repositories.
+Branches: Used within a repo, and are used to maintain the states of repos, in that some experimental change may be made in a repo which would need to be merged back into the master branch.
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
